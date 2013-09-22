@@ -31,25 +31,4 @@ end
 ary = [1, 2, 3, 5, 2, 9, 2, 18, 22, 144, 2, 3, 9]
 #call_sort(insertion_sort(ary))
 #print insertion_sort(ary)
-#print selection_sort(ary)
-
-
-def power(a, n)
-  if n == 0 
-    return 1
-  end
-
-  if n == 1
-    return a
-  end
-
-  x = power(a, n / 2)
-  if n % 2 != 0
-    return a * (x * x)
-  else
-    return (x * x)
-  end
-
-end
-
-print power(2, 20)
+print selection_sort(ary)
